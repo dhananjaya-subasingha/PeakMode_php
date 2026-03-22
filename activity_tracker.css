@@ -1,0 +1,208 @@
+.tracker-content {
+    background-image: url(./images/barbell.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100%;
+}
+
+
+
+/* Main card */
+.tracker-card {
+    background: rgba(0, 0, 0, 0.70);
+    border: 1px solid rgba(255, 0, 0, 0.25);
+    border-left: 4px solid red;
+    border-radius: 10px;
+    padding: 28px;
+    color: white;
+}
+
+.tracker-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.tracker-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Form inputs */
+.tracker-label {
+    color: #ccc;
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.tracker-input {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border-radius: 6px;
+}
+
+.tracker-input:focus {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: red !important;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.25) !important;
+    color: white !important;
+}
+
+.tracker-input option {
+    background: #1a1a1a;
+    color: white;
+}
+
+/* Enter button */
+.tracker-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: red;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.tracker-btn:hover {
+    background: darkred;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+/* Stats */
+.stat-card {
+    background: rgba(0, 0, 0, 0.70);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+    color: white;
+    transition: box-shadow 0.3s;
+}
+
+.stat-card:hover {
+    box-shadow: 0 0 14px rgba(255, 0, 0, 0.4);
+}
+
+.stat-icon {
+    font-size: 1.6rem;
+    color: red;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.78rem;
+    color: #aaa;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Chart tabs */
+.chart-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.chart-tab {
+    padding: 6px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    background: transparent;
+    color: #ccc;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.chart-tab:hover {
+    border-color: red;
+    color: white;
+}
+
+.chart-tab.active {
+    background: red;
+    border-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+/* Table */
+.tracker-table {
+    color: #ddd;
+    border-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 0;
+}
+
+.tracker-table thead th {
+    background: rgba(255, 0, 0, 0.18);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tracker-table tbody tr {
+    border-color: rgba(255, 255, 255, 0.08);
+    transition: background 0.2s;
+}
+
+.tracker-table tbody tr:hover {
+    background: rgba(255, 0, 0, 0.08);
+}
+
+.tracker-table tbody td {
+    vertical-align: middle;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Delete button in table */
+.delete-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    color: #ff6b6b;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    background: red;
+    color: white;
+}
+
+/* Clear all */
+.clear-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #aaa;
+    border-radius: 6px;
+    padding: 5px 14px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.clear-btn:hover {
+    border-color: red;
+    color: #ff6b6b;
+}

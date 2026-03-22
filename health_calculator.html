@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peakmode Calculators</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="health_calculator.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div class="mini-grid">
+                <div class="logo">
+                    <img src="./images/logo1.PNG" width="150px">
+                </div>
+                <div class="quote">
+                    <p style="text-align : right">"Only those who dare to fail greatly can ever achieve greatly!"</p>
+                </div>
+
+                <ul class="custom-navbar">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="health_calculator.html">Health Calculators</a></li>
+                    <li><a href="workout_plans.html">Workout Plans</a></li>
+                    <li><a href="activity_tracker.php">Activity Tracker</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content2">
+            <div class="form-container">
+                <h2>Body Fat Calculator</h2>
+
+                <form id="bodyfat">
+                    <label>
+                        Male
+                        <input type="radio" name="gender" value="male" required>
+                        Female
+                        <input type="radio" name="gender" value="female">
+                    </label><br>
+                    <!-- <label>Age </label><input form = "number" id = "Age" placeholder="20"><br> -->
+                    <!-- <label>Weight </label><input form = "number" id = "Weight" placeholder="80KG"><br> -->
+                    <label>Height </label><input type="number" id="Height" placeholder="180cm" class="tracker-input"><br>
+                    <label>Neck </label><input type="number" id="Neck" placeholder="30cm" class="tracker-input"><br>
+                    <label>Waist </label><input type="number" id="Waist" placeholder="90cm" class="tracker-input"><br>
+                    <label>Hip</label><input type="number" id="Hip" placeholder="95cm if you're a female" class="tracker-input"><br><br>
+                    <button type="submit">submit</button>
+                    <p id="result"></p>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h2>BMI Calulator</h2>
+                <form id="BMI">
+                    <label>Height</label><input type="number" id="Height2" placeholder="180cm" class="tracker-input"><br>
+                    <label>Weight</label><input type="number" id="Weight2" placeholder="80kg" class="tracker-input"><br><br>
+                    <button type="submit">submit</button>
+                    <p id="result2"></p>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h2> Waist-to-Hip Ratio (WHR)</h2>
+                <form id="WHR">
+                    <label>Male<input type="radio" name="gender" value="Male" required >
+                        Female<input type="radio" name="gender" value="Female"></label><br>
+                    <label>Waist</label><input type="number" id="Waist2" placeholder="80cm" class="tracker-input"><br>
+                    <label>Hip</label><input type="number" id="Hip2" placeholder="90cm" class="tracker-input"><br><br>
+                    <button type="submit">submit</button>
+                    <p id="result3"></p>
+                </form>
+            </div>
+            <section class="form-container">
+                <h1>Body Fat Percentage</h1>
+
+                <p>
+                    Body Fat Percentage estimates how much of a person's body weight is made up of fat versus lean mass
+                    (muscles, bones, organs, and water). In this project, we use the <b>U.S. Navy Method</b>, which
+                    measures
+                    height, neck, waist, and hip (for females). It is simple, inexpensive, and fairly accurate for
+                    general fitness.
+                </p>
+
+                <p><b>Why it is useful:</b> Provides a better understanding of body composition than weight alone. Two
+                    people
+                    with the same weight may have very different body fat levels depending on muscle mass.</p>
+
+                <p><b>If results are high:</b> May indicate increased risk of heart disease, diabetes, and reduced
+                    metabolic efficiency.
+                    Improvement methods include regular exercise, strength training, balanced nutrition, and maintaining
+                    caloric balance.</p>
+            </section>
+
+            <!-- Section 2: Body Mass Index (BMI) -->
+            <section class="form-container">
+                <h1>Body Mass Index (BMI)</h1>
+
+                <p>
+                    BMI is a widely used method to estimate whether a person's weight is appropriate for their height.
+                    It is calculated as weight (kg) divided by height (m) squared.
+                </p>
+
+                <p><b>Why BMI is useful:</b> Quick and easy to calculate; requires only height and weight; helps
+                    identify
+                    potential health risks in large populations.</p>
+
+                <p><b>Limitations:</b> BMI does not differentiate between muscle and fat. Very muscular individuals,
+                    like bodybuilders or heavyweight fighters, may be classified as overweight or obese even with low
+                    body fat.</p>
+            </section>
+
+            <!-- Section 3: Waist-to-Hip Ratio (WHR) -->
+            <section class="form-container">
+                <h1>Waist-to-Hip Ratio (WHR)</h1>
+
+                <p>
+                    WHR measures fat distribution by comparing waist and hip measurements. It is particularly useful for
+                    identifying central obesity, which refers to excess abdominal fat.
+                </p>
+
+                <p><b>Why WHR is useful:</b> Abdominal fat is strongly linked to heart disease, type 2 diabetes, and
+                    metabolic syndrome. Even people with normal BMI may have high abdominal fat, increasing health
+                    risks.</p>
+
+                <p>Using BMI, Body Fat %, and WHR together gives a complete picture of health: BMI for general
+                    screening,
+                    body fat percentage for composition, and WHR for fat distribution and cardiovascular risk.</p>
+            </section>
+
+        </div>
+        <!-- Section 1: Body Fat Percentage -->
+
+        <div class="footer">
+            <img src="./images/footer_logo.png" width="200px">
+        </div>
+    </div>
+    <script src="health_calculator.js"></script>
+</body>
+
+</html>

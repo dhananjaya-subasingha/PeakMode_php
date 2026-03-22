@@ -1,0 +1,134 @@
+
+.form-container{
+    width: 250px;
+    margin: 30px auto;
+    padding: 30px;
+    background:rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color:white;
+}
+
+.content2{
+    background-image:url(./images/barbell.png);
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    background-attachment: fixed;
+}
+
+.form-container {
+    flex: 0 0 calc(33.33% - 100px); /* three per row, accounting for gap */
+    box-sizing: border-box; /* include padding/border in width */
+    margin-bottom: 20px; /* spacing between rows */
+}
+
+.form-container h2{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    
+}
+button:hover{
+    background:darkred;
+    box-shadow: 0 0 15px rgba(255,0,0,0.8);
+}
+
+
+.tracker-input {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.tracker-input:focus {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: red;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.25);
+    outline: none;
+}
+
+.tracker-input::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+
+    /* Content area stacks vertically */
+    .content2 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;  /* smaller spacing between calculators */
+        padding: 10px;
+    }
+
+    /* Each calculator/form takes full width */
+    .form-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 12px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    /* Stack label and input */
+    .form-container form label {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 14px;
+    }
+
+    /* Inputs and buttons full width */
+    .tracker-input, .form-container button {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 8px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Headings smaller and left aligned */
+    .form-container h2, .form-container h1 {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    /* Paragraphs smaller */
+    .form-container p {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 6px;
+    }
+
+    /* Footer image centered */
+    .footer {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
