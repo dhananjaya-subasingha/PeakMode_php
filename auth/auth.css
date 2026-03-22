@@ -1,0 +1,87 @@
+/* Background same vibe */
+.auth-page {
+    background-image: url("../images/barbell.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.auth-card {
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 0, 0, 0.25);
+    border-left: 4px solid red;
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* Title */
+.auth-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.auth-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
+    color: white;
+}
+
+.auth-input:focus {
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 0 2px rgba(255,0,0,0.25);
+}
+
+/* Button */
+.auth-btn {
+    width: 100%;
+    padding: 10px;
+    background: red;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    background: darkred;
+    box-shadow: 0 0 12px rgba(255,0,0,0.7);
+}
+
+/* Link */
+.auth-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.auth-link a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
